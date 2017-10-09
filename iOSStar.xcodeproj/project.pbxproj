@@ -2775,7 +2775,7 @@
 					};
 					A07238491EA768AC00E755DB = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8T49GGXJKV;
+						DevelopmentTeam = QU624439M7;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -3527,10 +3527,10 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = iOSStar/iOSStar.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Wenming You (8BDUHJM253)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wenming You (8BDUHJM253)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tammy Tang (QU624439M7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tammy Tang (QU624439M7)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 8T49GGXJKV;
+				DEVELOPMENT_TEAM = QU624439M7;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3572,10 +3572,10 @@
 					"\"$(SRCROOT)/iOSSTar/Resource/alipay\"",
 					"$(PROJECT_DIR)/iOSStar/Resource/GtSdkLib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloudTop.starcloud;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yundian.internetStar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9e126738-8bef-49ac-8414-82845110fd53";
-				PROVISIONING_PROFILE_SPECIFIER = starCloudDev;
+				PROVISIONING_PROFILE = "a3c3415f-2de8-4dd8-8f17-7f93a1dc46d5";
+				PROVISIONING_PROFILE_SPECIFIER = internetStarDistribution;
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSStar/Other/iOSStar-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "iOSStar-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3593,9 +3593,9 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = iOSStar/iOSStar.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Wenming You (8T49GGXJKV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Wenming You (8T49GGXJKV)";
-				DEVELOPMENT_TEAM = 8T49GGXJKV;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tammy Tang (QU624439M7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tammy Tang (QU624439M7)";
+				DEVELOPMENT_TEAM = QU624439M7;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3627,10 +3627,10 @@
 					"\"$(SRCROOT)/iOSSTar/Resource/alipay\"",
 					"$(PROJECT_DIR)/iOSStar/Resource/GtSdkLib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloudTop.starcloud;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yundian.internetStar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "aba6a6fb-ef97-4af4-a42e-9fcc3a309da6";
-				PROVISIONING_PROFILE_SPECIFIER = starCloudDis;
+				PROVISIONING_PROFILE = "a3c3415f-2de8-4dd8-8f17-7f93a1dc46d5";
+				PROVISIONING_PROFILE_SPECIFIER = internetStarDistribution;
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSStar/Other/iOSStar-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "iOSStar-Swift.h";
 				SWIFT_VERSION = 3.0;

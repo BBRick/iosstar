@@ -13,7 +13,7 @@ class HeaderCell: UITableViewCell {
     
     @IBOutlet var message: UIButton!
     @IBOutlet var bgView: UIView!
-    // 星云币
+    // 你好网红币
     @IBOutlet weak var balance: UILabel!
     // 持有市值
     @IBOutlet var market_cap: UILabel!

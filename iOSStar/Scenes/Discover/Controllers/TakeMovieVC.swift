@@ -310,7 +310,7 @@ extension TakeMovieVC  {
                 if model.nick_name == "" {
                     let nameUid = StarUserModel.getCurrentUser()?.userinfo?.id
                     let stringUid = String.init(format: "%d", nameUid!)
-                    self.name.text = "星云用户" + stringUid
+                    self.name.text = "你好网红用户" + stringUid
                 } else  {
                     self.name.text = model.nick_name
                 }

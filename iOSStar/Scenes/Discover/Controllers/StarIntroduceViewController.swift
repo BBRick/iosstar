@@ -65,7 +65,7 @@ class StarIntroduceViewController: UIViewController {
 //            let share  = Share()
 //            let vc = UIStoryboard.init(name: "Market", bundle: nil).instantiateViewController(withIdentifier: "ShareVC") as? ShareVC
 //            vc?.modalPresentationStyle = .custom
-//            share.titlestr = (starDetailModel?.star_name)! + "(正在星云 出售TA的时间)"
+//            share.titlestr = (starDetailModel?.star_name)! + "(正在你好网红 出售TA的时间)"
 //            share.Image = headerImg.image
 //            share.descr = model.experience
 //            share.work = (starDetailModel?.work)!

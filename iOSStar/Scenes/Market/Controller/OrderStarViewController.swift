@@ -216,12 +216,17 @@ class OrderStarViewController: UIViewController {
         // 确定连接事件
         completeButton.addTarget(self, action: #selector(completeClick(_:)), for: .touchUpInside)
         
-        // 通知
-        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+  
         
         // 接收连接类型发出的通知
         NotificationCenter.default.addObserver(self, selector: #selector(chooseServiceType(_:)), name:
             Notification.Name(rawValue:AppConst.chooseServiceTypeSuccess), object: nil)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // 通知
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -243,23 +248,25 @@ class OrderStarViewController: UIViewController {
     func chooseServiceType(_ notification :Notification ) {
         
         if notification.object != nil {
-            let serviceType = notification.object as! ServiceTypeModel
-            serviceTypeModel = serviceType
-            // // print("===\(serviceTypeModel)")
             
-            let strString = String.init(format:"即将消耗: %@秒",serviceType.price)
-            let attrs = [NSForegroundColorAttributeName:UIColor.colorFromRGB(0xFB9938)]
-            
-            let attributedString  = NSMutableAttributedString(string: strString, attributes: attrs)
-            let attrsM = [NSForegroundColorAttributeName:UIColor.colorFromRGB(0x666666)]
-            attributedString.addAttributes(attrsM, range: NSMakeRange(0, 5))
-            self.priceLabel.attributedText = attributedString
-            
-            orderPalace.text = serviceType.meet_city.length() == 0 ? AppConst.meetCityDefault : serviceType.meet_city
-            datePickerView.minimumDate = Date.yt_convertDateStrToDate(serviceTypeModel.startdate, format: "yyyy-MM-dd")
-            datePickerView.maximumDate = Date.yt_convertDateStrToDate(serviceTypeModel.enddate, format: "yyyy-MM-dd")
-            orderTime.text = Date.yt_convertDateToStr(datePickerView.minimumDate!, format: "yyyy-MM-dd")
-            // self.priceLabel.text = String.init(format:"即将消耗: %@秒",serviceType.price)
+            if let serviceType = notification.object as? ServiceTypeModel {
+                serviceTypeModel = serviceType
+                // // print("===\(serviceTypeModel)")
+                
+                let strString = String.init(format:"即将消耗: %@秒",serviceType.price)
+                let attrs = [NSForegroundColorAttributeName:UIColor.init(hexString: "FB9938")]
+                
+                let attributedString  = NSMutableAttributedString(string: strString, attributes: attrs)
+                let attrsM = [NSForegroundColorAttributeName:UIColor.init(hexString: "666666")]
+                attributedString.addAttributes(attrsM, range: NSMakeRange(0, 5))
+                self.priceLabel.attributedText = attributedString
+                
+                orderPalace.text = serviceType.meet_city.length() == 0 ? AppConst.meetCityDefault : serviceType.meet_city
+                datePickerView.minimumDate = Date.yt_convertDateStrToDate(serviceTypeModel.startdate, format: "yyyy-MM-dd")
+                datePickerView.maximumDate = Date.yt_convertDateStrToDate(serviceTypeModel.enddate, format: "yyyy-MM-dd")
+                orderTime.text = Date.yt_convertDateToStr(datePickerView.minimumDate!, format: "yyyy-MM-dd")
+                // self.priceLabel.text = String.init(format:"即将消耗: %@秒",serviceType.price)
+            }
         }
     }
     
@@ -346,7 +353,7 @@ class OrderStarViewController: UIViewController {
                         alertVc.showAlertVc(imageName: "tangchuang_tongzhi",
                                             
                                             titleLabelText: "开通支付",
-                                            subTitleText: "需要开通支付才能进行充值等后续操作。\n开通支付后，您可以求购网红时间，转让网红时间，\n和网红在‘星聊’中聊天，并且还能连接网红。",
+                                            subTitleText: "需要开通支付才能进行充值等后续操作。\n开通支付后，您可以获取网红时间，回收网红时间，\n和网红在‘连接网红’中聊天，并且还能连接网红。",
                                             completeButtonTitle: "我 知 道 了") {[weak alertVc] (completeButton) in
                                                 alertVc?.dismissAlertVc()
                                                 
@@ -719,9 +726,9 @@ extension OrderStarViewController {
         
 //        
 //        let view : ShareView = Bundle.main.loadNibNamed("ShareView", owner: self, options: nil)?.last as! ShareView
-//        view.title = "你好网红"
+//        view.title = "易时光"
 //        view.thumbImage = "QQ"
-//        view.descr = "关于你好网红"
+//        view.descr = "关于易时光"
 //        view.webpageUrl = "http://www.baidu.com"
 //        view.shareViewController(viewController: self)
 //        

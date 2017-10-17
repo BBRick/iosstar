@@ -13,14 +13,14 @@
 - (NSString *)description {
     
     NSMutableDictionary *tmpDict = [NSMutableDictionary new];
-    // NOTE: 增加不变部分数据
+    // NOTE: 获取不变部分数据
     [tmpDict addEntriesFromDictionary:@{@"subject":_subject?:@"",
                                         @"out_trade_no":_out_trade_no?:@"",
                                         @"total_amount":_total_amount?:@"",
                                         @"seller_id":_seller_id?:@"",
                                         @"product_code":_product_code?:@"QUICK_MSECURITY_PAY"}];
     
-    // NOTE: 增加可变部分数据
+    // NOTE: 获取可变部分数据
     if (_body.length > 0) {
         [tmpDict setObject:_body forKey:@"body"];
     }
@@ -46,7 +46,7 @@
         return nil;
     }
     
-    // NOTE: 增加不变部分数据
+    // NOTE: 获取不变部分数据
     NSMutableDictionary *tmpDict = [NSMutableDictionary new];
     [tmpDict addEntriesFromDictionary:@{@"app_id":_app_id,
                                         @"method":_method?:@"alipay.trade.app.pay",
@@ -57,7 +57,7 @@
                                         @"sign_type":_sign_type?:@"RSA"}];
     
     
-    // NOTE: 增加可变部分数据
+    // NOTE: 获取可变部分数据
     if (_format.length > 0) {
         [tmpDict setObject:_format forKey:@"format"];
     }

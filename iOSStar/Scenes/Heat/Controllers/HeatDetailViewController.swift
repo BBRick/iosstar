@@ -39,7 +39,7 @@ class HeatDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "时间交易"
+        title = "时间回购"
         view.addSubview(renderer.view)
         backImageVIew.clipsToBounds = true
         setData()
@@ -120,7 +120,7 @@ class HeatDetailViewController: UIViewController {
         param.starcode = starListModel!.symbol
         AppAPIHelper.marketAPI().requestStarRealTime(requestModel: param, complete: { [weak self](result) in
             if let model = result as? StarSortListModel{
-                self?.priceLabel.text =  String.init(format: "%.2f", model.currentPrice)
+                self?.priceLabel.text =  model.currentPrice > 0 ? String.init(format: "%.2f", model.currentPrice) : ""
             }
         }, error: nil)
     }
@@ -134,20 +134,20 @@ class HeatDetailViewController: UIViewController {
         YD_CountDownHelper.shared.start()
         renderer.start()
         
-        if let _ = UserDefaults.standard.value(forKey: AppConst.guideKey.timeBusiness.rawValue) as? String {
-            
-        }else{
-            showGuideVC(.timeBusiness, handle: { (vc)in
-                if let guideVC = vc as? GuideVC{
-                    if guideVC.guideType == AppConst.guideKey.timeBusiness{
-                        guideVC.dismiss(animated: true, completion:nil)
-                        UserDefaults.standard.set("ok", forKey: AppConst.guideKey.timeBusiness.rawValue)
-                        return
-                    }
-                    
-                }
-            })
-        }
+//        if let _ = UserDefaults.standard.value(forKey: AppConst.guideKey.timeBusiness.rawValue) as? String {
+//            
+//        }else{
+//            showGuideVC(.timeBusiness, handle: { (vc)in
+//                if let guideVC = vc as? GuideVC{
+//                    if guideVC.guideType == AppConst.guideKey.timeBusiness{
+//                        guideVC.dismiss(animated: true, completion:nil)
+//                        UserDefaults.standard.set("ok", forKey: AppConst.guideKey.timeBusiness.rawValue)
+//                        return
+//                    }
+//                    
+//                }
+//            })
+//        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -196,7 +196,7 @@ class HeatDetailViewController: UIViewController {
         backImageVIew.image = UIImage(named: imageName)
         iconImageVie.layer.borderColor = UIColor.white.cgColor
         iconImageVie.layer.borderWidth = 1
-        priceLabel.text = String(format: "%.2f", starListModel?.currentPrice ?? 0)
+        priceLabel.text = starListModel?.currentPrice ?? 0 > 0 ? String(format: "%.2f", starListModel?.currentPrice ?? 0) : ""
 
         iconImageVie.kf.setImage(with: URL(string:ShareDataModel.share().qiniuHeader + (starListModel?.pic_tail)! ?? ""), placeholder: nil, options: nil, progressBlock: nil, completionHandler: nil)
         nameLabel.text = starListModel?.name

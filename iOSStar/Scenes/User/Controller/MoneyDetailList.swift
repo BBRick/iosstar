@@ -54,7 +54,7 @@ class MoneyDetailListCell: OEZTableViewCell {
             })
             self.moneyCountLb.text = "-" +  String.init(format: "%d秒", Int(model.amount))
             self.withDrawto.text = String.init(format: "%@ (%@)", starName,model.transaction_id)
-            self.statusLb.text = "星聊"
+            self.statusLb.text = "连接网红"
         }
         
         let timestr : Int = Date.stringToTimeStamp(stringTime: model.depositTime)

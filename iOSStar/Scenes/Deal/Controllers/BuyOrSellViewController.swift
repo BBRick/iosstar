@@ -11,7 +11,7 @@ import SVProgressHUD
 class BuyOrSellViewController: DealBaseViewController {
     var identifiers = ["DealStarInfoCell","DealMarketCell","DealOrderInfoCell"]
     var rowHeights = [137, 188,133,82]
-    var infos:[String] = ["转让价格","转让数量"]
+    var infos:[String] = ["回收价格","回收数量"]
     var count = 600
     var price = 0.0
     
@@ -24,11 +24,11 @@ class BuyOrSellViewController: DealBaseViewController {
         registerNotification()
         
         if dealType == AppConst.DealType.buy {
-            infos  = ["求购价格","求购数量"]
-            buyOrSellButton.setTitle("确认求购", for: .normal)
+            infos  = ["获取价格","获取数量"]
+            buyOrSellButton.setTitle("确认获取", for: .normal)
         } else {
-            infos = ["转让价格","转让数量"]
-            buyOrSellButton.setTitle("确认转让", for: .normal)
+            infos = ["回收价格","回收数量"]
+            buyOrSellButton.setTitle("确认回收", for: .normal)
         }
 
         if realTimeData != nil {
@@ -108,12 +108,12 @@ class BuyOrSellViewController: DealBaseViewController {
      
 
         if count > totalCount && dealType == AppConst.DealType.buy{
-            SVProgressHUD.showErrorMessage(ErrorMessage: "求购数量不能超过总发行量", ForDuration: 1.5, completion: nil)
+            SVProgressHUD.showErrorMessage(ErrorMessage: "获取数量不能超过总发行量", ForDuration: 1.5, completion: nil)
             return
         }
         
         if count > positionCount && dealType == AppConst.DealType.sell{
-            SVProgressHUD.showErrorMessage(ErrorMessage: "转让数量不能超过当前总持有量", ForDuration: 1.5, completion: nil)
+            SVProgressHUD.showErrorMessage(ErrorMessage: "回收数量不能超过当前总持有量", ForDuration: 1.5, completion: nil)
             return
         }
         

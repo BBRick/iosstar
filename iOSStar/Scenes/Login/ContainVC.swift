@@ -15,7 +15,7 @@ enum doStateClick{
     case doResetPwd  //  忘记密码
     case donext //  下一步
     case close //  下一步
-    case doJoin  //加入你好网红
+    case doJoin  //加入易时光
  
 }
 class ContainVC: UIViewController {

@@ -14,7 +14,7 @@ class HeatBarrageModel: BaseModel {
 }
 class BarrageListModel: NSObject {
     
-    var order_type: Int64 = 0         //1.转让 2.求购
+    var order_type: Int64 = 0         //1.回收 2.获取
     var order_num: Int64 = 0          // 数量
     var order_price: Double = 0       // 价格
     var head_url : String = ""        // 用户头像

@@ -19,7 +19,7 @@ class YDSSessionViewController: NIMSessionViewController ,UIScrollViewDelegate{
     }
     
     func setupNavbar(){
-        navigationItem.rightBarButtonItem = UIBarButtonItem.creatRightBarButtonItem(title: "星聊须知", target: self, action: #selector(rightButtonClick))
+        navigationItem.rightBarButtonItem = UIBarButtonItem.creatRightBarButtonItem(title: "连接网红须知", target: self, action: #selector(rightButtonClick))
         navigationItem.leftBarButtonItem = nil
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.imageWith("\u{e61a}", fontSize: CGSize.init(width: 22, height: 22), fontColor: UIColor(hexString: AppConst.Color.main)), style: .plain, target: self, action: #selector(leftItemTapped))
         navigationItem.leftBarButtonItem?.tintColor = UIColor(hexString: AppConst.Color.main)
@@ -59,7 +59,7 @@ class YDSSessionViewController: NIMSessionViewController ,UIScrollViewDelegate{
     func rightButtonClick() {
         let vc = BaseWebVC()
         vc.loadRequest = "http://122.144.169.219:3389/talk"
-        vc.navtitle = "星聊须知"
+        vc.navtitle = "连接网红须知"
         self.navigationController?.pushViewController(vc, animated: true)
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

@@ -64,7 +64,7 @@ class ExchangeViewController: UIViewController ,UITabBarControllerDelegate,NIMSy
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        title = "星聊"
+        title = "连接网红"
     }
     
 }

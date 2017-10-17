@@ -13,7 +13,7 @@
 
 - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 {
-        //使用公式 长度 = (最长－最小)*(2/pi)*artan(时间/10)+最小，在10秒时变化逐渐变缓，随着时间增加 无限趋向于最大值
+        //使用公式 长度 = (最长－最小)*(2/pi)*artan(时间/10)+最小，在10秒时变化逐渐变缓，随着时间获取 无限趋向于最大值
     NIMAudioObject *audioContent = (NIMAudioObject*)[message messageObject];
     NSAssert([audioContent isKindOfClass:[NIMAudioObject class]], @"message should be audio");
     

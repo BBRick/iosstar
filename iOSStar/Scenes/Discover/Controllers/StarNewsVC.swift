@@ -179,7 +179,7 @@ class StarNewsVC: BaseTableViewController, OEZTableViewDelegate, MWPhotoBrowserD
         
 //        if let model = expericences?[0]{
 //            let view : ShareView = Bundle.main.loadNibNamed("ShareView", owner: self, options: nil)?.last as! ShareView
-//            view.title = (starModel?.name)! + "(正在你好网红 出售TA的时间)"
+//            view.title = (starModel?.name)! + "(正在易时光 出售TA的时间)"
 //            view.Image = iconImage.image
 //            view.descr = model.experience
 //            view.webpageUrl = String.init(format: "%@?uid=%d&star_code=%@", AppConst.shareUrl,StarUserModel.getCurrentUser()?.userinfo?.id ?? 0,ShareDataModel.share().selectStarCode)

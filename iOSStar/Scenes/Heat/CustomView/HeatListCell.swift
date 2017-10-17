@@ -36,7 +36,7 @@ class HeatListCell: OEZTableViewCell {
 
             iconImageView.kf.setImage(with: URL(string:ShareDataModel.share().qiniuHeader + model.pic_tail), placeholder: nil, options: nil, progressBlock: nil, completionHandler: nil)
             nameLabel.text = model.name
-            priceLabel.text = String(format: "%.2f", model.currentPrice)
+            priceLabel.text = model.currentPrice > 0 ? String(format: "%.2f", model.currentPrice) : ""
             jobLabel.text = model.work
             
         }

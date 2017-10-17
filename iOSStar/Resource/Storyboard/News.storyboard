@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zti-WN-NNc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zti-WN-NNc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +26,7 @@
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="iconImageCell" rowHeight="200" id="d6o-PN-h5l" customClass="BannerDetailImageCell" customModule="iOSStar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="200"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d6o-PN-h5l" id="xzh-xX-nGS">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
@@ -48,7 +48,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="154" id="wQw-gv-r26" customClass="BannerDetailInfoCell" customModule="iOSStar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="256" width="375" height="154"/>
+                                        <rect key="frame" x="0.0" y="255.5" width="375" height="154"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wQw-gv-r26" id="zvQ-zd-gDf">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="154"/>
@@ -208,7 +208,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MarketExperienceCell" rowHeight="38" id="mVV-1K-xhh" customClass="MarketExperienceCell" customModule="iOSStar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="410" width="375" height="38"/>
+                                        <rect key="frame" x="0.0" y="409.5" width="375" height="38"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mVV-1K-xhh" id="5VP-O3-VsU">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
@@ -339,7 +339,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4pi-zy-aLv" id="abC-Cq-ggh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HSp-Zg-yZ3">
@@ -430,7 +430,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Home" automaticallyAdjustsScrollViewInsets="NO" id="zti-WN-NNc" customClass="BaseNavigationController" customModule="iOSStar" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8PJ-E2-YVN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8PJ-E2-YVN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -443,7 +443,7 @@
             </objects>
             <point key="canvasLocation" x="6" y="-79"/>
         </scene>
-        <!--星云-->
+        <!--易时光-->
         <scene sceneID="WgE-Dh-J7F">
             <objects>
                 <viewController id="wFQ-lf-4uH" customClass="HomeVC" customModule="iOSStar" customModuleProvider="target" sceneMemberID="viewController">
@@ -470,7 +470,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="星云" id="kB3-PP-pr6">
+                    <navigationItem key="navigationItem" title="易时光" id="kB3-PP-pr6">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="tCp-4g-iql">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J69-fO-dHX">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>

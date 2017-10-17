@@ -51,9 +51,9 @@ class PublisherPageViewController: UIViewController {
     @IBAction func shareAction(_ sender: Any) {
         
 //        let view : ShareView = Bundle.main.loadNibNamed("ShareView", owner: self, options: nil)?.last as! ShareView
-//        view.title = "你好网红"
+//        view.title = "易时光"
 //        view.thumbImage = "QQ"
-//        view.descr = "关于你好网红"
+//        view.descr = "关于易时光"
 //        view.webpageUrl = "http://www.baidu.com"
 //        view.shareViewController(viewController: self)
 //        UMSocialUIManager.showShareMenuViewInWindow { (platform, userInfo) in

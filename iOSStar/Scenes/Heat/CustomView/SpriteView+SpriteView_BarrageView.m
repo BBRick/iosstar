@@ -24,7 +24,7 @@
     NSNumber *price = params[@"price"];
     NSNumber *buySell = params[@"buySell"];
     NSNumber *count = params[@"amount"];
-    self.titleLabel.text = [NSString stringWithFormat:@"%@%@%d秒, %.2f/秒",name, [buySell integerValue] == 1 ? @"求购":@"转让", [count intValue], [price floatValue]];
+    self.titleLabel.text = [NSString stringWithFormat:@"%@%@%d秒, %.2f/秒",name, [buySell integerValue] == 1 ? @"获取":@"回收", [count intValue], [price floatValue]];
     
     CGRect rect = [self.titleLabel.text boundingRectWithSize:CGSizeMake(0, 20) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleLabel.font} context:nil];
     self.titleLabel.width = rect.size.width;

@@ -83,8 +83,8 @@ class MarketDetailViewController: UIViewController,ChartViewDelegate {
         headerView.timeLineView = timeLineView
         bottomScrollView.setSubViews(views: subViews)
         handleMenuView.images = images
-//        handleMenuView.titles = ["求购", "转让", "粉丝见面会", "自选"]
-        handleMenuView.titles = ["求购", "转让", "粉丝见面会"]
+//        handleMenuView.titles = ["获取", "回收", "粉丝见面会", "自选"]
+        handleMenuView.titles = ["获取", "回收", "粉丝见面会"]
 
         handleMenuView.delegate = self
         currentVC = childViewControllers.first as? MarketBaseViewController

@@ -232,7 +232,7 @@ class AppConst {
         case presell
         //发售
         case selling
-        //求购
+        //获取
         case askToBuy
         //更多
         case more

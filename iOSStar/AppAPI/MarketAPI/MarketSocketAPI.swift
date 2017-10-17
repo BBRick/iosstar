@@ -92,7 +92,7 @@ class MarketSocketAPI: BaseSocketAPI,MarketAPI {
         startRequest(packet, complete: complete, error: error)
     }
     
-    //获取拍卖时间
+    //获取回收时间
     func requestAuctionStatus(requestModel:AuctionStatusRequestModel,complete: CompleteBlock?, error: ErrorBlock?) {
         let packet = SocketDataPacket(opcode: .auctionStatus, model: requestModel)
         startModelRequest(packet, modelClass: AuctionStatusModel.self, complete: complete, error: error)

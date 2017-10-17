@@ -63,7 +63,7 @@ class SettingVC: BaseTableViewController {
             if cell == buyRoleCell {
                 let vc = BaseWebVC()
                 vc.loadRequest = "http://122.144.169.219:3389/transaction"
-                vc.navtitle = "买卖规则"
+                vc.navtitle = "回购规则"
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             

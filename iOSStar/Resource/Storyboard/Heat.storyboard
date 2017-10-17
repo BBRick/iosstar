@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YAj-2Q-WWI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YAj-2Q-WWI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YAj-2Q-WWI" customClass="BaseNavigationController" customModule="iOSStar" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QC8-Ep-amw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QC8-Ep-amw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -148,7 +148,7 @@
             </objects>
             <point key="canvasLocation" x="1100" y="179"/>
         </scene>
-        <!--时间交易-->
+        <!--时间回购-->
         <scene sceneID="x0R-1g-zQ5">
             <objects>
                 <viewController storyboardIdentifier="HeatDetailViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="epr-7o-9bp" customClass="HeatDetailViewController" customModule="iOSStar" customModuleProvider="target" sceneMemberID="viewController">
@@ -196,7 +196,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4W-X8-Zhs">
                                                                 <rect key="frame" x="230" y="10" width="109" height="48"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -255,7 +255,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="Jtm-RM-nhO"/>
                                                     <constraint firstAttribute="width" constant="140" id="KLU-d5-0sg"/>
                                                 </constraints>
-                                                <state key="normal" title="求购">
+                                                <state key="normal" title="获取">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -269,14 +269,14 @@
                                                     <constraint firstAttribute="width" constant="140" id="RvN-IT-7Py"/>
                                                     <constraint firstAttribute="height" constant="50" id="h2t-YT-iCF"/>
                                                 </constraints>
-                                                <state key="normal" title="转让">
+                                                <state key="normal" title="回收">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="sellAction:" destination="epr-7o-9bp" eventType="touchUpInside" id="Wh2-RK-TRn"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易倒计时" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKM-HR-jJk">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回购倒计时" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKM-HR-jJk">
                                                 <rect key="frame" x="143" y="244" width="90" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -336,7 +336,7 @@
                             <constraint firstAttribute="bottom" secondItem="CNH-BU-uJG" secondAttribute="bottom" id="e1r-wA-pBb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="时间交易" id="mLs-dm-iYO">
+                    <navigationItem key="navigationItem" title="时间回购" id="mLs-dm-iYO">
                         <barButtonItem key="leftBarButtonItem" image="white_back" id="JXm-eT-76H">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>

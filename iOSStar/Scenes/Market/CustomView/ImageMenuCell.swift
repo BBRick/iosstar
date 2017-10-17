@@ -20,7 +20,7 @@ class ImageMenuCell: UICollectionViewCell {
        
         let label = UILabel()
         label.textColor = UIColor(hexString: AppConst.Color.main)
-        label.text = "求购"
+        label.text = "获取"
         label.font = UIFont.systemFont(ofSize: 10)
         label.isUserInteractionEnabled = true
         return label

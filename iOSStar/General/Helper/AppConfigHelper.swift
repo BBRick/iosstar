@@ -19,7 +19,7 @@ let kGtAppSecret:String = "mPM2noSYeMAGhOHbpFj4W8"
 class AppConfigHelper: NSObject {
     
 
-    var dealResult:[Int32 : String] = [-1 : "订单取消", 0 : "扣费成功", -2 : "转让方持有时间不足", -3 : "求购方金币不足", 2 : "交易成功"]
+    var dealResult:[Int32 : String] = [-1 : "订单取消", 0 : "扣费成功", -2 : "回收方持有时间不足", -3 : "获取方金币不足", 2 : "交易成功"]
     var updateModel:UpdateParam?
     
     lazy var alertView: TradingAlertView = {
@@ -315,7 +315,7 @@ class AppConfigHelper: NSObject {
         localNotify.timeZone = NSTimeZone.default
         localNotify.soundName = UILocalNotificationDefaultSoundName
         if #available(iOS 8.2, *) {
-            localNotify.alertTitle = "你好网红"
+            localNotify.alertTitle = "易时光"
         } else {
             // Fallback on earlier versions
         }

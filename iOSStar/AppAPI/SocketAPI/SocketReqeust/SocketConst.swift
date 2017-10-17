@@ -100,7 +100,7 @@ class SocketConst: NSObject {
         case buyOrSell = 5001
         //收到匹配成功
         case receiveMatching = 5101
-        //获取拍卖时间
+        //获取回收时间
         case auctionStatus = 5005
         //所有订单
         case allOrder = 6029
@@ -134,7 +134,7 @@ class SocketConst: NSObject {
         case userask = 15015
         case starask = 15017
         case qeepask = 15025
-        //拍卖买卖占比
+        //回收买卖占比
         case buySellPercent = 6017
         //获取网红总时间
         case starTotalTime = 10027

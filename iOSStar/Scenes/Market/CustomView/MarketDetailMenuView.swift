@@ -18,7 +18,7 @@ class MarketDetailMenuView: UIView {
         layout.minimumLineSpacing = 0
         let menuView = YD_VMenuView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 50), layout: layout)
         menuView.isScreenWidth = true
-        let titles = ["简介","粉丝热度榜","拍卖","评论"]
+        let titles = ["简介","粉丝热度榜","回收","评论"]
         menuView.itemData = titles as [AnyObject]?
         menuView.reloadData()
         return menuView

@@ -48,10 +48,10 @@ class DiscoverViewController: UIViewController, MenuViewDelegate{
         menuView = YD_VMenuView(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 40), layout: layout)
         view.addSubview(menuView!)
         menuView?.isScreenWidth = true
-        let titles = ["抢购", "互动"]
+        let titles = ["获取", "互动"]
         menuView?.itemData = titles as [AnyObject]?
         menuView?.reloadData()
-        menuView?.delegate = self
+        menuView?.delegate = self  
         view.addSubview(scrollView)
         addChildViewControllers()
     }

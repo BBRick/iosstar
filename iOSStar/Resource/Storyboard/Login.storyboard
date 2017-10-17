@@ -134,36 +134,48 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKn-l3-phZ">
-                                                        <rect key="frame" x="15" y="34" width="128" height="21"/>
+                                                        <rect key="frame" x="15" y="34" width="139.5" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="ddW-L3-GHh"/>
                                                         </constraints>
                                                         <attributedString key="attributedText">
-                                                            <fragment content="星云，">
+                                                            <fragment content="易时光">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="14" name="SimHei"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="，">
                                                                 <attributes>
                                                                     <font key="NSFont" size="15" name=".PingFangSC-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment content=" ">
                                                                 <attributes>
                                                                     <font key="NSFont" metaFont="smallSystem"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment content="你与">
                                                                 <attributes>
                                                                     <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
                                                                     <font key="NSOriginalFont" size="12" name="PingFangSC-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment content="网红">
                                                                 <attributes>
                                                                     <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment content="零距离">
                                                                 <attributes>
                                                                     <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
                                                                     <font key="NSOriginalFont" size="12" name="PingFangSC-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                         </attributedString>
@@ -237,7 +249,7 @@
                                                             <action selector="wechatLogin:" destination="oJk-2R-WDq" eventType="touchUpInside" id="rIO-CN-h0A"/>
                                                         </connections>
                                                     </button>
-                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJt-bV-4sD">
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJt-bV-4sD">
                                                         <rect key="frame" x="120" y="319" width="50" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="14.5" id="4hE-7d-yPk"/>
@@ -279,7 +291,7 @@
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
-                                                                <fragment content="星云法律协议">
+                                                                <fragment content="易时光法律协议">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <font key="NSFont" size="10" name=".PingFangSC-Regular"/>
@@ -994,13 +1006,13 @@
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="dt3-9U-fVo"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <state key="normal" title="进入星云"/>
+                                                        <state key="normal" title="易时光"/>
                                                         <connections>
                                                             <action selector="joinXingXiang:" destination="9CJ-9Y-qZN" eventType="touchUpInside" id="QeB-Tg-hiz"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入星云" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BX-g8-GgR">
-                                                        <rect key="frame" x="98" y="35" width="73.5" height="22"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="易时光" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BX-g8-GgR">
+                                                        <rect key="frame" x="107" y="35" width="55.5" height="22"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1267,23 +1279,36 @@
                                                             <constraint firstAttribute="width" constant="175" id="vIw-nb-jUS"/>
                                                         </constraints>
                                                         <attributedString key="attributedText">
-                                                            <fragment content="星云">
+                                                            <fragment content="易时光">
                                                                 <attributes>
                                                                     <font key="NSFont" size="15" name="PingFangSC-Regular"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment content="， ">
                                                                 <attributes>
                                                                     <font key="NSFont" size="18" name="PingFangSC-Regular"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
-                                                            <fragment content="你与明星零距离">
+                                                            <fragment content="你与">
                                                                 <attributes>
                                                                     <font key="NSFont" size="12" name="PingFangSC-Regular"/>
                                                                     <font key="NSOriginalFont" size="12" name="PingFangSC-Regular"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="网红">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="零距离">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                                    <font key="NSOriginalFont" size="12" name="PingFangSC-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                         </attributedString>
@@ -1334,7 +1359,7 @@
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第三方登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKK-Ce-Pv9">
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKK-Ce-Pv9">
                                                         <rect key="frame" x="15" y="287" width="104" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="104" id="X5P-Pe-eEp"/>
@@ -1388,7 +1413,7 @@
                                                             <action selector="sendVaildCode:" destination="Byu-Yt-e4a" eventType="touchUpInside" id="amD-lV-N1O"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctD-mK-ehf">
+                                                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctD-mK-ehf">
                                                         <rect key="frame" x="60" y="303" width="148" height="51"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="51" id="NLL-IX-wWB"/>
@@ -1412,15 +1437,15 @@
                                                             <action selector="didMiss:" destination="Byu-Yt-e4a" eventType="touchUpInside" id="dfm-sK-8KM"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weixin_login" translatesAutoresizingMaskIntoConstraints="NO" id="PRD-09-m2y">
+                                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PRD-09-m2y">
                                                         <rect key="frame" x="91" y="319" width="25" height="22"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="22" id="74v-nX-43t"/>
                                                             <constraint firstAttribute="width" constant="25" id="b16-aq-eXn"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgl-ss-Axm">
-                                                        <rect key="frame" x="122" y="323" width="50" height="15"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgl-ss-Axm">
+                                                        <rect key="frame" x="122" y="330.5" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1523,7 +1548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bcy-cK-nPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-874" y="716"/>
+            <point key="canvasLocation" x="-875.625" y="715.14084507042253"/>
         </scene>
     </scenes>
     <resources>

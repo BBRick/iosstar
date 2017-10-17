@@ -21,9 +21,9 @@ class AuctionHeaderCell: UITableViewCell {
     @IBOutlet weak var sellCountLabel: UILabel!
     @IBOutlet weak var totalCountLabel: UILabel!
     @IBOutlet weak var buyWidth: NSLayoutConstraint!
-    //拍卖倒计时剩余时间
+    //回收倒计时剩余时间
     @IBOutlet weak var timeLabel: UILabel!
-    //转让委托总数据量占比
+    //回收委托总数据量占比
     @IBOutlet var sellProgressView: GradualColorView!
     @IBOutlet weak var countProgressView: GradualColorView!
     @IBOutlet var buyProgressView: GradualColorView!
@@ -100,10 +100,10 @@ class AuctionHeaderCell: UITableViewCell {
     
     func setTimeText(text:String) {
         
-        if text == "拍卖未开始" {
+        if text == "回收未开始" {
             timeLabel.text = text
         } else {
-            timeLabel.setAttributeText(text: "剩余拍卖时间: \(text)", firstFont: 16, secondFont: 16, firstColor: UIColor(hexString: "333333"), secondColor: UIColor(hexString: "FB9938"), range: NSRange(location: 8, length: text.length()))
+            timeLabel.setAttributeText(text: "剩余回收时间: \(text)", firstFont: 16, secondFont: 16, firstColor: UIColor(hexString: "333333"), secondColor: UIColor(hexString: "FB9938"), range: NSRange(location: 8, length: text.length()))
         }
     }
     func setImageUrl(url:String)  {

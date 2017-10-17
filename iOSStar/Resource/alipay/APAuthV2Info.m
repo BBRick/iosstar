@@ -17,7 +17,7 @@
         return nil;
     }
     
-    // NOTE: 增加不变部分数据
+    // NOTE: 获取不变部分数据
     NSMutableDictionary *tmpDict = [NSMutableDictionary new];
     [tmpDict addEntriesFromDictionary:@{@"app_id":_appID,
                                         @"pid":_pid,
@@ -26,7 +26,7 @@
                                         @"app_name":@"mc",
                                         @"biz_type":@"openservice",
                                         @"product_id":@"APP_FAST_LOGIN",
-                                        @"scope":@"kuaijie",
+                                        @"scope":@"kuaijie",\
                                         @"target_id":(_targetID?:@"20141225xxxx"),
                                         @"auth_type":(_authType?:@"AUTHACCOUNT")}];
     

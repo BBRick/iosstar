@@ -103,7 +103,7 @@ class UserVC: BaseCustomTableViewController ,NIMSystemNotificationManagerDelegat
                 if model.nick_name == "" {
                     let nameUid = StarUserModel.getCurrentUser()?.userinfo?.id
                     let stringUid = String.init(format: "%d", nameUid!)
-                    self.nickNameLabel?.text = "你好网红用户" + stringUid
+                    self.nickNameLabel?.text = "易时光用户" + stringUid
                 } else  {
                     self.nickNameLabel?.text = model.nick_name
                 }

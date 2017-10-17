@@ -11,7 +11,7 @@ import UIKit
 class DealDoubleRowCell: UITableViewCell {
     
 
-    var dealType:[Int:String] = [-1:"转让",1:"求购"]
+    var dealType:[Int:String] = [-1:"回收",1:"获取"]
     var dealStatus:[Int32:String] = [-2:"委托失败",-1 : "委托失败", 0:"委托中", 1:"委托中", 2:"委托成功"]
     @IBOutlet weak var nameLabel: UILabel!
 

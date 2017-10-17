@@ -23,10 +23,10 @@ class AuctionTimeCell: UITableViewCell {
     }
     func setTimeText(text:String) {
         
-        if text == "拍卖未开始" {
+        if text == "回收未开始" {
             timeLabel.text = text
         } else {
-            timeLabel.setAttributeText(text: "剩余拍卖时间: \(text)", firstFont: 16, secondFont: 16, firstColor: UIColor(hexString: "333333"), secondColor: UIColor(hexString: "FB9938"), range: NSRange(location: 8, length: text.length()))
+            timeLabel.setAttributeText(text: "剩余回收时间: \(text)", firstFont: 16, secondFont: 16, firstColor: UIColor(hexString: "333333"), secondColor: UIColor(hexString: "FB9938"), range: NSRange(location: 8, length: text.length()))
         }
     }
 }

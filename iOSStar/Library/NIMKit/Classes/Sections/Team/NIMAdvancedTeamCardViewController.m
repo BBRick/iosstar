@@ -546,7 +546,7 @@
 
 #pragma mark - Action
 - (void)onMore:(id)sender{
-    _moreActionSheet = [[UIActionSheet alloc] initWithTitle:@"请操作" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"转让群",@"转让群并退出",nil];
+    _moreActionSheet = [[UIActionSheet alloc] initWithTitle:@"请操作" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"回收群",@"回收群并退出",nil];
     [_moreActionSheet showInView:self.view];
 }
 

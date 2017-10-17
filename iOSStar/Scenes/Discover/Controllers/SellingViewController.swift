@@ -214,7 +214,7 @@ extension SellingViewController:UITableViewDataSource, UITableViewDelegate, UITe
             alertVc.showAlertVc(imageName: "tangchuang_tongzhi",
                                 
                                 titleLabelText: "开通支付",
-                                subTitleText: "需要开通支付才能进行充值等后续操作。\n开通支付后，您可以求购网红时间，转让网红时间，\n和网红在‘星聊’中聊天，并且还能连接网红。",
+                                subTitleText: "需要开通支付才能进行充值等后续操作。\n开通支付后，您可以获取网红时间，回收网红时间，\n和网红在‘连接网红’中聊天，并且还能连接网红。",
                                 completeButtonTitle: "我 知 道 了") {[weak alertVc] (completeButton) in
                                     alertVc?.dismissAlertVc()
                                     

@@ -17,7 +17,7 @@ class FansListHeaderView: UITableViewHeaderFooterView {
     lazy var buyButton:UIButton = {
         let button = UIButton(type: .custom)
         button.tag = 2222
-        button.setTitle("求购榜单", for: .normal)
+        button.setTitle("获取榜单", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13.0)
         button.setTitleColor(UIColor(hexString: "333333"), for: .normal)
         return button
@@ -26,7 +26,7 @@ class FansListHeaderView: UITableViewHeaderFooterView {
        let button = UIButton(type: .custom)
         button.tag = 2223
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13.0)
-        button.setTitle("转让榜单", for: .normal)
+        button.setTitle("回收榜单", for: .normal)
         button.setTitleColor(UIColor(hexString: "333333"), for: .normal)
         return button
     }()

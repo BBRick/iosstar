@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -105,7 +105,7 @@
                                                         <constraint firstAttribute="height" constant="30" id="9JS-DM-Zgg"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <state key="normal" title="进入拍卖排行榜&gt;">
+                                                    <state key="normal" title="进入委托排行榜&gt;">
                                                         <color key="titleColor" red="0.98431372549019602" green="0.59999999999999998" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
@@ -232,7 +232,7 @@
                                                         <action selector="pricePlus:" destination="gZS-bz-YA7" eventType="touchUpInside" id="hF2-OE-IdE"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转让价格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTN-R8-Pny">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回收价格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTN-R8-Pny">
                                                     <rect key="frame" x="63" y="35" width="58" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="KdC-AM-kFe"/>
@@ -241,7 +241,7 @@
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转让数量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7F-hh-H3i">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回收数量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7F-hh-H3i">
                                                     <rect key="frame" x="254" y="35" width="58" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="MB2-Vw-lfd"/>
@@ -345,7 +345,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="7qC-2x-ZAC"/>
                                         </constraints>
-                                        <state key="normal" title="确认转让">
+                                        <state key="normal" title="确认回收">
                                             <color key="titleColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -1387,7 +1387,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lZT-k9-eNh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uUc-BT-dWh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uUc-BT-dWh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1405,7 +1405,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5RR-hx-khM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="T3V-av-IRf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T3V-av-IRf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

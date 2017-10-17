@@ -46,7 +46,7 @@ class DealViewController: RedBackItemViewController,DealScrollViewScrollDelegate
         menuView?.backgroundColor = UIColor.clear
         menuView?.isScreenWidth = true
         
-        let titles =  ["求购","转让","持有","订单","明细"]
+        let titles =  ["获取","回收","持有","订单","明细"]
         menuView?.itemData = titles as [AnyObject]?
         menuView?.reloadData()
         menuView?.delegate = self

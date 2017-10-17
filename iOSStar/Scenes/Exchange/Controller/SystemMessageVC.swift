@@ -24,7 +24,7 @@ class MessageCell:  OEZTableViewCell{
         let userId = StarUserModel.getCurrentUser()?.userinfo?.id
         StartModel.getStartName(startCode: model.symbol) { (result) in
             let data = result as! StartModel
-            let str = model.sellUid == StarUserModel.getCurrentUser()?.userinfo?.id ? "转让":"求购"
+            let str = model.sellUid == StarUserModel.getCurrentUser()?.userinfo?.id ? "回收":"获取"
             self.content.text = "\(data.name)" +  " " + "(" + "\(data.code)" + ")" +  " " + str
         }
         
@@ -176,7 +176,7 @@ class SystemMessageVC: BasePageListTableViewController {
 //            alertVc.showAlertVc(imageName: "tangchuang_tongzhi",
 //                                
 //                                titleLabelText: "开通支付",
-//                                subTitleText: "需要开通支付才能进行充值等后续操作。\n开通支付后，您可以求购网红时间，转让网红时间，\n和网红在‘星聊’中聊天，并且还能连接网红。",
+//                                subTitleText: "需要开通支付才能进行充值等后续操作。\n开通支付后，您可以获取网红时间，回收网红时间，\n和网红在‘连接网红’中聊天，并且还能连接网红。",
 //                                completeButtonTitle: "我 知 道 了") {[weak alertVc] (completeButton) in
 //                                    alertVc?.dismissAlertVc()
 //                                    let vc = UIStoryboard.init(name: "User", bundle: nil).instantiateViewController(withIdentifier: "TradePassWordVC")
@@ -300,7 +300,7 @@ class SystemMessageVC: BasePageListTableViewController {
           model.orderPrice = "\(order.openPrice)"
         }
        
-        model.orderStatus  = order.sellUid == StarUserModel.getCurrentUser()?.userinfo?.id ? "转让":"求购"
+        model.orderStatus  = order.sellUid == StarUserModel.getCurrentUser()?.userinfo?.id ? "回收":"获取"
         StartModel.getStartName(startCode: order.symbol) { (result) in
             let data = result as! StartModel
             model.orderInfomation = "\(data.name)" + "(" + "\(data.code)" + ")"

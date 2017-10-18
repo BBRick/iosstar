@@ -27,6 +27,9 @@ class NewsCell: OEZTableViewCell {
     var newsPicUrl = ""
     
     override func awakeFromNib() {
+        iconImage.contentMode = .scaleAspectFill
+        iconImage.clipsToBounds = true
+
         nameLabel.textColor = UIColor(hexString: AppConst.Color.main)
         newsPic.isUserInteractionEnabled = true
         showBtn.setImage(UIImage.imageWith(AppConst.iconFontName.showIcon.rawValue, fontSize: CGSize.init(width: 22, height: 17), fontColor: UIColor(hexString: "75C1E7")), for: .normal)

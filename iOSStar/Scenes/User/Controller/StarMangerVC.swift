@@ -27,7 +27,7 @@ class StarMangerVC: UIViewController {
         self.automaticallyAdjustsScrollViewInsets = false
         scrollView.isPagingEnabled = true
         scrollView.isScrollEnabled = false
-        title = "我预约的网红"
+        title = "持有明细"
         segment.tintColor = UIColor.init(hexString: AppConst.Color.main)
         
     }

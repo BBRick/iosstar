@@ -22,7 +22,7 @@ class GetOrderStarsVC: BaseCustomPageListTableViewController,OEZTableViewDelegat
      // MARK: - viewload
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "我预约的网红"
+        title = "持有明细"
         self.nodaView.isHidden = true
         
     }

@@ -10,7 +10,7 @@ import UIKit
 import SVProgressHUD
 class BuyOrSellViewController: DealBaseViewController {
     var identifiers = ["DealStarInfoCell","DealMarketCell","DealOrderInfoCell"]
-    var rowHeights = [137, 188,133,82]
+    var rowHeights = [137, 100,133,82]
     var infos:[String] = ["回收价格","回收数量"]
     var count = 600
     var price = 0.0

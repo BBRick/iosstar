@@ -37,7 +37,7 @@ class DealViewController: RedBackItemViewController,DealScrollViewScrollDelegate
     func setupMenuView() {
         navigationController?.navigationBar.setBackgroundImage(UIColor.white.imageWithColor(), for: .default)
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: (kScreenWidth - 44 - 28) / 5, height: 40)
+        layout.itemSize = CGSize(width: (kScreenWidth - 44 - 28) / 2, height: 40)
         layout.sectionInset = UIEdgeInsets(top: -3, left: 0, bottom: 0, right: 28)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
@@ -46,7 +46,8 @@ class DealViewController: RedBackItemViewController,DealScrollViewScrollDelegate
         menuView?.backgroundColor = UIColor.clear
         menuView?.isScreenWidth = true
         
-        let titles =  ["获取","回收","持有","订单","明细"]
+//        let titles =  ["获取","回收","持有","订单","明细"]
+        let titles =  ["获取","回收"]
         menuView?.itemData = titles as [AnyObject]?
         menuView?.reloadData()
         menuView?.delegate = self
@@ -62,7 +63,8 @@ class DealViewController: RedBackItemViewController,DealScrollViewScrollDelegate
         
     }
     func addSubViews() {
-        let identifiers = ["BuyOrSellViewController","BuyOrSellViewController","BuyYetViewController","AllOrderViewController","DealDetailViewController"]
+//        let identifiers = ["BuyOrSellViewController","BuyOrSellViewController","BuyYetViewController","AllOrderViewController","DealDetailViewController"]
+        let identifiers = ["BuyOrSellViewController","BuyOrSellViewController"]
         let stroyBoard = UIStoryboard(name: AppConst.StoryBoardName.Deal.rawValue, bundle: nil)
         var views = [UIView]()
         for (index,identifier) in identifiers.enumerated() {

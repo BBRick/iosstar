@@ -9,15 +9,15 @@
 import UIKit
 
 class DealMarketCell: UITableViewCell {
-    @IBOutlet weak var changePercentLabel: UILabel!
-    @IBOutlet weak var changePriceLabel: UILabel!
+//    @IBOutlet weak var changePercentLabel: UILabel!
+//    @IBOutlet weak var changePriceLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         priceLabel.textColor = UIColor.init(hexString: AppConst.Color.orange)
-        changePriceLabel.textColor = UIColor.init(hexString: AppConst.Color.up)
-        changePercentLabel.textColor = UIColor.init(hexString: AppConst.Color.up)
+//        changePriceLabel.textColor = UIColor.init(hexString: AppConst.Color.up)
+//        changePercentLabel.textColor = UIColor.init(hexString: AppConst.Color.up)
         
         // Initialization code
     }
@@ -28,25 +28,25 @@ class DealMarketCell: UITableViewCell {
         guard model != nil else {
             return
         }
-        var colorString = AppConst.Color.up
-        let percent = model!.pchg * 100
+//        var colorString = AppConst.Color.up
+//        let percent = model!.pchg * 100
 
-        if model!.pchg < 0 {
-            changePercentLabel.text = String(format: "%.2f%%", -percent)
-            changePriceLabel.text = String(format: "%.2f", model!.change)
-            colorString = AppConst.Color.down
-        } else if model!.pchg == 0{
-            changePercentLabel.text = String(format: "%.2f%%", -percent)
-            
-            changePriceLabel.text = String(format: "%.2f", model!.change)
-            colorString = "333333"
-        } else {
-            changePercentLabel.text = String(format: "+%.2f%%",percent)
-
-            changePriceLabel.text = String(format: "%.2f",model!.change)
-        }
-        changePriceLabel.textColor = UIColor(hexString: colorString)
-        changePercentLabel.textColor = UIColor(hexString: colorString)
+//        if model!.pchg < 0 {
+//            changePercentLabel.text = String(format: "%.2f%%", -percent)
+//            changePriceLabel.text = String(format: "%.2f", model!.change)
+//            colorString = AppConst.Color.down
+//        } else if model!.pchg == 0{
+//            changePercentLabel.text = String(format: "%.2f%%", -percent)
+//            
+//            changePriceLabel.text = String(format: "%.2f", model!.change)
+//            colorString = "333333"
+//        } else {
+//            changePercentLabel.text = String(format: "+%.2f%%",percent)
+//
+//            changePriceLabel.text = String(format: "%.2f",model!.change)
+//        }
+//        changePriceLabel.textColor = UIColor(hexString: colorString)
+//        changePercentLabel.textColor = UIColor(hexString: colorString)
 
 
         priceLabel.text = String(format: "%.2f", model!.currentPrice)

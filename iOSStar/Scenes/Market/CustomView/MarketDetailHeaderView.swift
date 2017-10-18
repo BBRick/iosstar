@@ -35,7 +35,7 @@ class MarketDetailHeaderView: UIView {
 
     func panGesAction(sender:UIPanGestureRecognizer) {
         
-        let point = sender.translation(in: timeLineView)
+//        let point = sender.translation(in: timeLineView)
         
     }
     

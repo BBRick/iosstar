@@ -72,6 +72,9 @@ class HeatListViewController: UITableViewController {
                         publishModels.append(model)
                     }
                 }
+                if models.count < 10 {
+                    self.footer.isHidden = true
+                }
                 self.tableView.mj_header.endRefreshing()
                 self.dataSource = publishModels
                 self.tableView.reloadData()
@@ -141,8 +144,15 @@ class HeatListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if dataSource?.count ?? 0 != 0 {
-            
-            performSegue(withIdentifier: "ToDeal", sender: indexPath)
+            if checkLogin(){
+                let storyBoard = UIStoryboard(name: AppConst.StoryBoardName.Deal.rawValue, bundle: nil)
+                if let vc = storyBoard.instantiateViewController(withIdentifier: "DealViewController") as? DealViewController {
+                    let starListModel = dataSource![indexPath.row]
+                    vc.starListModel = starListModel
+                    navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+            //            performSegue(withIdentifier: "ToDeal", sender: indexPath)
 
         }
     }

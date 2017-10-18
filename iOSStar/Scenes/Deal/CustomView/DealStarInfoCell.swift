@@ -16,6 +16,8 @@ class DealStarInfoCell: UITableViewCell {
     var delegate:ShowEntrustDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
+        iconImageView.contentMode = .scaleAspectFill
+        iconImageView.clipsToBounds = true
         // Initialization code
     }
     @IBAction func showEntrust(_ sender: Any) {

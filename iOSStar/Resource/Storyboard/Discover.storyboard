@@ -2035,7 +2035,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYN-XS-2wh">
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYN-XS-2wh">
                                             <rect key="frame" x="12" y="30" width="44" height="42"/>
                                             <connections>
                                                 <action selector="pushDetail:" destination="btw-Ng-wUf" eventType="touchUpInside" id="g0g-KX-C2H"/>

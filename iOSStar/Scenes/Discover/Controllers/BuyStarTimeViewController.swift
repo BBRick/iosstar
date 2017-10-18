@@ -126,22 +126,38 @@ extension BuyStarTimeViewController:UICollectionViewDataSource, UICollectionView
          return cell
     }
 
+    func toDealPage() {
+    
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if checkLogin(){
             let starModel = dataSouce![indexPath.row]
             var segueString = "StarNewsVC"
             switch starModel.pushlish_type {
             case 0:
+                
                 segueString = "ToSelling"
             case 1:
+                
                  segueString = "ToSelling"
             case 2:
-                if let dealVC = UIStoryboard.init(name: "Heat", bundle: nil).instantiateViewController(withIdentifier: HeatDetailViewController.className()) as? HeatDetailViewController{
-                    let model = dataSouce?[indexPath.row]
-                    dealVC.starListModel = model
-                    _ = navigationController?.pushViewController(dealVC, animated: true)
+                if checkLogin(){
+                    let storyBoard = UIStoryboard(name: AppConst.StoryBoardName.Deal.rawValue, bundle: nil)
+                    if let vc = storyBoard.instantiateViewController(withIdentifier: "DealViewController") as? DealViewController {
+                        let starListModel = dataSouce![indexPath.row]
+                        vc.starListModel = starListModel
+                        navigationController?.pushViewController(vc, animated: true)
+                    }
                     return
                 }
+//                if let dealVC = UIStoryboard.init(name: "Heat", bundle: nil).instantiateViewController(withIdentifier: HeatDetailViewController.className()) as? HeatDetailViewController{
+//                    let model = dataSouce?[indexPath.row]
+//                    dealVC.starListModel = model
+//                    _ = navigationController?.pushViewController(dealVC, animated: true)
+//                    return
+//                }
             default:
                 ShareDataModel.share().selectStarCode = ""
                 segueString = StarNewsVC.className()

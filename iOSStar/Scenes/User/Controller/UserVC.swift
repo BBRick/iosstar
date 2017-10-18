@@ -33,7 +33,7 @@ class UserVC: BaseCustomTableViewController ,NIMSystemNotificationManagerDelegat
     var buyStarCountLabel : UILabel?
     var PromotionUrl = ""
     // 名字数组
-    var titltArry = ["交易明细","我的钱包","我预约的网红","客服中心","通用设置"]
+    var titltArry = ["交易明细","我的钱包","持有明细","客服中心","通用设置"]
     //messagebtn
     @IBOutlet var message: UIButton!
     var responseData: UserInfoModel?
